@@ -1,0 +1,7 @@
+The task is to implement a distributed algorithm using threads in a client-server architecture.
+The application consists of a server with a supervisor thread and multiple clients with controller and application threads.
+The supervisor thread monitors the application execution, receives copies of exchanged messages and entity state information,
+and displays the number of messages exchanged, ideal elapsed time, and real time.
+The controller threads implement the distributed algorithm and communicate with the supervisor thread by sending copies of messages and data state information.
+The application threads display the controller thread activity. The network topology for the algorithm can be a tree, ring, or complete graph,
+and is represented by an array of neighbors for each controller thread
